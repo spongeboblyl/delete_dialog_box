@@ -45,7 +45,7 @@
             }
 
             $(window).resize(function() {//页面窗口大小改变事件
-                if (!$(".dialog").is(":visible")) {
+                if (!$(".dialog").is(":visible")) {//如果没有出现对话框，则不执行该事件中的代码，避免占用资源
                     return;
                 }
                 showDialog();//设置提示框的Top,Left
